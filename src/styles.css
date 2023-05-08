@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+/* Add the Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Set the font and some basic styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Style the header links */
+.nav-link {
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+/* Style the buttons */
+.btn {
+  font-weight: 500;
+}
+
+/* Style the table */
+table {
+  background-color: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+
+/* Style the form */
+.form-control,
+.form-select {
+  box-shadow: none;
+}
+
+/* Add some margin to form elements */
+.form-group {
+  margin-bottom: 1rem;
+}

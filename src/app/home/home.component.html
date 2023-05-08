@@ -1,0 +1,69 @@
+<div class="container mt-5">
+    <h1>Employee Management System</h1>
+    
+    <div class="mt-4">
+      <form (ngSubmit)="onAdd(addForm.value)" #addForm="ngForm">
+        <div class="form-row">
+          <div class="col">
+            <input
+              type="number"
+              class="form-control"
+              id="addId"
+              placeholder="ID"
+              name="id"
+              ngModel
+              required
+            />
+          </div>
+          <div class="col">
+            <input
+              type="email"
+              class="form-control"
+              id="addEmail"
+              placeholder="Email"
+              name="email"
+              ngModel
+              required
+            />
+          </div>
+          <div class="col">
+            <input
+              type="text"
+              class="form-control"
+              id="addDepartment"
+              placeholder="Department"
+              name="department"
+              ngModel
+              required
+            />
+          </div>
+          <div class="col">
+            <button type="submit" class="btn btn-primary" [disabled]="!addForm.valid">Add Employee</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <table class="table mt-4">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Email</th>
+          <th>Department</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let employee of employees">
+          <td>{{ employee.id }}</td>
+          <td>{{ employee.email }}</td>
+          <td>{{ employee.department }}</td>
+          <td>
+            <button class="btn btn-danger" (click)="onDelete(employee.id)">Delete</button>
+            <button class="btn btn-warning" (click)="editEmployee(employee)">Edit</button>
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

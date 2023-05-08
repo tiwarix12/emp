@@ -1,0 +1,27 @@
+/* Home component styles
+.table-container {
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    background-color: rgb(247, 64, 64);
+  }
+  
+  .search-bar {
+    margin-bottom: 20px;
+  }
+  
+  .add-employee-btn {
+    margin-bottom: 20px;
+  }
+  
+  .action-buttons {
+    white-space: nowrap;
+  }
+  
+  @media (max-width: 575.98px) {
+    .table-responsive {
+      overflow-x: auto;
+    }
+  }
+   */
